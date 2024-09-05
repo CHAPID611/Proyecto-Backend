@@ -6,11 +6,11 @@ const server = http.createServer((req, res) => {
     res.end();
   } else if (req.url === '/new-page') {
     res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
+    res.setHeader('Content-Type', 'text/html');
     res.end('Esta es la nueva página.');
   } else {
     res.statusCode = 404;
-    res.setHeader('Content-Type', 'text/plain');
+    res.setHeader('Content-Type', 'application/json');
     res.end('Página no encontrada');
   }
 });
