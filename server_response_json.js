@@ -2,7 +2,7 @@ const http = require('http');
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
-  res.setHeader('Content-Type', 'application/json');
+  res.setHeader('Content-Type', 'text/html');
   res.end(JSON.stringify({ message: 'Hola, Mundo!', status: 'success' }));
 });
 
